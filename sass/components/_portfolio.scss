@@ -187,14 +187,24 @@ flex-grow: 1;
     
 
     display: block;
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: 767px) {
+            width: 450px;
+    height: 294px;
+    
+    }
+
+    @media screen and (min-width: 768px) {
+            width: 354px;
+    height: 294px;
+    }
+    
+    @media screen and (min-width: 1200px) {
     width: 370px;
     height: 294px;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
-
-    // @media screen and (max-width: 767px) {
-    //         width: 450px;
-    // height: 294px;
-    // }
+    }         
 }
 
 .card-set__item:hover .card-set__hover-box {
