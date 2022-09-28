@@ -679,6 +679,7 @@ a {
 
 .checkbox__icon:checked ~ .checkbox__new-icon {
   background-color: var(--blue-color);
+  border-color: var(--blue-color);
 }
 
 .modal__button-send {
