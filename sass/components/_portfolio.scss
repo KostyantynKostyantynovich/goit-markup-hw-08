@@ -86,7 +86,6 @@ margin-bottom: 50px;
             }
 
         @media screen and (min-width: 768px) and (max-width: 1199px) {
-                // width: calc((100% - 30px) / 2);
    width: 354px;
             }            
 
@@ -181,7 +180,7 @@ flex-grow: 1;
 
 .card-set__hover-box {
     position: absolute;
-    top: 300px;
+    top: 298px;
 
     background: rgba(33, 150, 243, 0.9);
     
@@ -207,8 +206,9 @@ flex-grow: 1;
     }         
 }
 
-.card-set__item:hover .card-set__hover-box {
-    transform: translateY(-300px);
+.card-set__link:hover .card-set__hover-box,
+.card-set__link:focus .card-set__hover-box {
+    transform: translateY(-100%);
 }
 
 .card-set__hover-text {
